@@ -155,8 +155,31 @@ body{
     background: linear-gradient(to bottom, var(--Light-slate-blue-background), var(--Light-royal-blue-background));
 }
 
+.attribution {
+    color: #111111;
+    width: 100%;
+    text-align: center;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 100%;
+    text-shadow: rgba(255, 255, 255, .15);
+    display: flex;
+    justify-content: center;
+    gap: .3rem;
+    align-items: center;
+    position: absolute;
+    bottom: 4rem;
+}
+.attribution, a {
+    transition: .5s ease;
+}
+.footer .attribution a {
+    display: inline-block;
+    width: max-content;
+    position: relative;
+    color: #0d0d0d;
+}
 
-@media screen and (max-width:650px){
+@media screen and (max-width:800px){
     body{
         align-items: flex-start;
         background-color: white;

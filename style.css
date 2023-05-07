@@ -167,7 +167,8 @@ body{
     gap: .3rem;
     align-items: center;
     position: absolute;
-    bottom: 4rem;
+    bottom: .20rem;
+    margin-bottom: -10px;
 }
 .attribution, a {
     transition: .5s ease;
@@ -203,6 +204,23 @@ body{
     }
 
     .summary{
+        width: 100%;
+    }
+    
+        a::before {
+        content: "";
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #131313;
+        transition: .7s ease;
+        z-index: -1;
+        transform: rotate(-2deg);
+    }
+
+    .attribution a:hover::before {
         width: 100%;
     }
 }
